@@ -1,0 +1,28 @@
+.main-container{
+    display: flex;
+}
+.form-container{
+    width: 60%;
+}
+
+.social{
+    padding-top: 30px;
+    width: 40%;
+}
+
+.social p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px!important;
+}
+
+.social > ul li {
+    margin-bottom: 20px;
+}
+
+.social > ul img {
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}

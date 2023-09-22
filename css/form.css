@@ -1,0 +1,147 @@
+.form-container {
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+.half-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.half-container>.half-column {
+    width: 49%;
+    grid-template-columns: 20% 80%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.field {
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 10% 85%;
+    padding: 0 .4rem;
+    overflow: hidden;
+}
+
+.field i {
+    text-align: center;
+    line-height: 50px;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+}
+
+.field:focus-within {
+    border-bottom: 3px solid var(--color-primary);
+}
+
+.field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #333;
+}
+
+.field select {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.field input::placeholder {
+    color: #aaa;
+}
+
+.field input:focus::placeholder {
+    color: #333;
+}
+
+.showpassword {
+    position: relative;
+    left: 0;
+}
+
+.field .fa-eye {
+    position: absolute;
+    color: #333333;
+    right: 0;
+    margin-right: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.showpassword:focus-within .field .fa-eye {
+    color: var(--color-primary);
+}
+
+.field .fa-eye:hover {
+    color: var(--color-primary);
+}
+
+.f-textarea textarea {
+    padding: 20px;
+    width: 100%;
+    border-width: 0;
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+.f-textarea {
+    display: block;
+    height: 200px;
+}
+
+.s-btn {
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: white;
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: .5s;
+}
+
+.s-btn:hover {
+    background-color: var(--color-secondary);
+}
+
+.field .input-col select {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    padding: 0 10px 0 10px;
+}
+
+.field .input-col {
+    width: 100%;
+}
+
+.agent-field {
+    grid-template-columns: 100% 0%;
+}
+
+.login-card {
+    width: 35%;
+}

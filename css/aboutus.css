@@ -1,0 +1,44 @@
+.about-container {
+    display: flex;
+    margin: 40px 0 40px 0;
+    ;
+}
+
+.about-column {
+    flex: 50%;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: auto;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.slider {
+    width: 90%;
+    height: auto;
+    display: none;
+}
+
+.s-button {
+    display: inline-block;
+}
+
+.left-btn {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+}
+
+.right-btn {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+}
